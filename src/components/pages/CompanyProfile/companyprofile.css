@@ -1,0 +1,868 @@
+
+:root {
+    --app-padding: 3.5vw;
+    --mobile-padding: 1vw;
+}
+
+/**************************************Header***********************************************/
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FAFAFA;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 90vw;
+    margin-left: var(--app-padding);
+    margin-right: var(--app-padding);
+}
+
+.header-top {
+    height: 72px;
+    background: #fff;
+    border-bottom: 1px solid #F3F3F3;
+    padding-left: var(--app-padding);
+    padding-right: var(--app-padding);
+}
+
+
+.header-top .swiftbel-brand-logo {
+    width: 28.5px;
+    height: 26.83px;
+}
+
+.header-top .profile-search {
+    width: 191px;
+    height: 42px;
+    border: 1px solid #F3F3F3;
+    border-radius: 50px;
+    padding: 11px 16px 12px 16px;
+    color: #787373;
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;    
+}
+
+.header-top .profile-search:focus{
+        outline: none;
+        box-shadow: 0px 0px 0px white;
+        border: none;
+}
+
+.header-top .profile-search-icon {
+    width: 19px;
+    height: 19px;
+    transform: translate(-220px, 12px);
+}
+
+.header-top .profile-button {
+    border: 1px solid #F3F3F3;
+    border-radius: 32.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    width: 104px;
+}
+
+.header-top .profile-button svg {
+    width: 20px;
+}
+
+.header-top .profile-button img {
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+}
+
+.header-top .swiftbel-brand-name {
+    background: linear-gradient(128.86deg, #D81159 11.42%, #EB873F 72%, #FFCF23 107.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: 101.66px;
+    height: 24px;
+}
+
+.header {
+    height: auto;
+    margin-top: 72px;
+}
+
+.header .companyname {
+    font-weight: 600;
+    font-size: 2.375rem;
+    line-height: 150%;
+    color: #190F0F;
+    width: 35.063rem;
+    height: 2.938rem;
+}
+
+.header .companyprofilelogo {
+    position: static;
+    width: 90px;
+    height: 90px;
+    border-radius: 75.5px;
+ 
+}
+
+.header .companytagline {
+    font-weight: 400;
+    font-size: 1.625rem;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #190F0F;
+}
+
+.header .profilepromo {
+    /* position: static; */
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #787373;
+}
+
+.header .profileedit {
+    width: 6.813rem;
+    height: 2.125rem;
+    background: #190F0F;
+    border-radius: 50px;
+    color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.02em;
+    border: none;
+}
+
+.header .addtofavourites {
+    width: 8.813rem;
+    height: 2.125rem;
+    color: #190F0F;
+    border-radius: 50px;
+    background: #fff;
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.02em;
+    border: 1px solid black;
+}
+
+.header .background-banner {
+    position: absolute;
+    width: 23.438rem;
+    height: 19.563rem;
+    top: 72px;    
+    right: 7vw;
+    background: #FFCF23;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+
+.header .banner {
+    position: absolute;
+    width: 31.125rem;
+    height: 21.5rem;
+    top: 102px;
+    right: 10vw;
+    border-radius: 4px;
+    
+} 
+
+.timeStyle{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 195px;
+height: 46px;
+background: #F3F3F3;
+border-radius: 10px;
+}
+
+.timeStyle .react-time-picker__wrapper{
+    border: none;
+}
+
+.timeStyle .react-time-picker__inputGroup{
+   padding: 0 30px;
+}
+
+.edit-profile-modal{
+    max-width: 80vw;
+    height: auto;
+}
+ 
+ .edit-profile-modal .modal-content{
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 360px) and (max-width: 539px){
+    .edit-profile-modal{
+    max-width: 95vw;
+    height: auto;
+    }
+
+    .edit-profile-modal .modal-content{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 767px){
+    .edit-profile-modal{
+    max-width: 85vw;
+    height: auto;
+    }
+
+    .edit-profile-modal .modal-content{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .edit-profile-modal{
+    max-width: 85vw;
+    height: auto;
+    }
+
+    .edit-profile-modal .modal-content{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1212px){
+    .edit-profile-modal{
+    max-width: 90vw;
+    height: auto;
+    }
+
+    .edit-profile-modal .modal-content{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media (min-width: 1213px) and (max-width: 1379px){
+    .edit-profile-modal{
+    max-width: 75vw;
+    height: auto;
+    }
+
+    .edit-profile-modal .modal-content{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1380px) and (max-width: 1485px){
+    .edit-profile-modal{
+    max-width: 72vw;
+    height: auto;
+    }
+
+    .edit-profile-modal .modal-content{
+        width: 100%;
+        height: 100%;
+    }
+}
+/****************************************NavBar***********************************************/
+
+ .bottom-navbar{
+    border-bottom: 2px solid #F3F3F3;
+    width: 100%;
+    height: 40px;
+    top: 72px !important;
+}
+ .bottom-navbar .addpost-btn {
+    position: absolute;
+    right: 0;
+    width: 137px;
+    height: 29px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 16px;
+    background: #190F0F;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+ .bottom-navbar a .nav-link {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+}
+
+.bottom-navbar .navbar-nav>li>a {
+    margin-right: 1rem;
+    border-bottom: 2px solid #F3F3F3;
+    color: #787373;
+}
+
+.bottom-navbar .navbar-nav>li>a.active,
+.bottom-navbar .navbar-nav>li>a:focus {
+    border-bottom: 2px solid #190F0F;
+    color: #190F0F;
+}
+
+.bottom-navbar .navbar-nav>li>a:hover {
+    border-bottom: 2px solid #190F0F;
+    color: #190F0F;
+}
+
+.post-container .lang-header {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #333333;
+}
+
+.add-more-posts-modal {
+    max-width: 45.565vw;
+    height: 55vh;
+}
+
+  
+
+.add-more-posts-modal .modal-content{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+@media (min-width: 360px) and (max-width: 539px){
+
+    .add-more-posts-modal {
+    max-width: 60vw;
+    height: 70vh;
+    }
+
+    .add-more-posts-modal .modal-content{
+        width: 100%;
+        height: 100%;
+    }
+}
+.modal-p{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+height: 75vh;
+width: 55vw;
+margin-right: -50%;
+border-radius:15px;
+overflow: hidden;
+}
+
+.add-more-posts-modal .modal-header {
+    border: none;
+    background-color: white;
+}
+
+.add-more-posts-modal .modal-body {
+    background: #F3F3F3;
+    box-sizing: border-box;
+    border-radius: 0px 0px 4px 4px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.add-more-posts-modal .add-more-posts-companytagline{
+font-weight: 400;
+font-size: 16px;
+line-height: 120%;
+display: flex;
+align-items: center;
+color: #190F0F;
+}
+
+.modal-footer {
+    border: none;
+}
+
+
+.post-image {
+    padding: 0;
+    height: 542px;
+}
+
+
+/*******************************************Languages****************************************************/
+.lang .lang-header {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #333333;
+}
+
+.lang .lang-button {
+    position: static;
+    width: 113px;
+    height: 34px;
+    background: #FAFAFA;
+    border: 1px solid #D0CECE;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+/***************************************Posts********************************************************/
+
+.post-container .post-pic {
+    width: 100%;
+    height: 80%;
+    max-height: 300px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.post-container .btn-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-container .btn-moreposts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 55px;
+    width: 15.0625rem;
+    height: 2.125rem;
+    background: #000000;
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+}
+
+
+/***********************************************Services**************************************************/
+
+.services .services-header {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #333333;
+}
+
+.services .post-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/**********************************************Feedback****************************************************/
+.feedback .feedback-heading {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #333333;
+}
+
+.feedback .feedback-header {
+    color: #333333;
+    font-size: 18px;
+}
+
+.feedback .feed-param {
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #190F0F;
+    margin-bottom: 0;
+}
+
+.feedback .ratings-bar {
+    width: 100%;
+    height: 5px;
+    background: #D0CECE;
+    border-radius: 50px;
+    color: #787373;
+}
+
+.feedback .ratings-bar .progress-bar {
+    background-color: #787373;
+}
+
+.feedback .rating-index {
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #190F0F;
+}
+
+.feedback .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 28px;
+}
+
+.feedback .profile-name {
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #190F0F
+}
+
+.feedback .feedback-comment {
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #190F0F;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.feedback .addmorefeedback {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback .btn-addmorefeedback {
+    width: 241px;
+    height: 34px;
+    left: 255.5px;
+    top: 672px;
+    background: #FAFAFA;
+    border: 1px solid #D0CECE;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.feedback p {
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #787373;
+}
+
+/***************************Footer Bottom ********************************************/
+.footer-bottom {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden;
+    background: #FAFAFA;
+}
+
+.footer-bottom .copyright{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #190F0F;
+}
+
+.footer-bottom hr {
+    background: linear-gradient(to bottom right, #D81159, #EB873F, #FFCF23);
+    height: 1px;
+}
+
+.footer-bottom p{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #190F0F;
+}
+
+
+ @media (min-width: 540px) and (max-width: 767px){
+    .header-top{
+        display: none;
+    } 
+    
+    nav .addpost-btn{
+        width: 120px;
+        height: 29px;
+        padding: 4px 16px;
+     }
+
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 600px;
+    }
+
+    .header .companyname-box{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 72px;
+    }
+
+    .header .companyname{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      position: absolute;
+      top: 10px;
+      width: 109px;
+      height: 22px;
+      text-align: center;
+      letter-spacing: 0.01em;
+      }
+ 
+      .header .background-banner {
+          display: none;
+      }
+
+      .header .banner{
+          width: 100%;
+          object-fit: fill;
+          border-radius: 4px;
+          top: 72px;
+          transform: translateX(11%);
+      }
+    
+      .header .companyprofilelogo {
+        border: 8px solid #FFFFFF;
+        position: absolute;
+        top: 22rem;
+        z-index: 10;
+        left: calc(44%);
+      }
+
+      .header .companytagline-box{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+      }
+
+      .header .companytagline{
+        font-family: 'SF Pro Display';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: start;
+        letter-spacing: 0.02em;
+        color: #190F0F;
+        top: 28rem;
+        position: absolute;
+      }
+
+       .header .profilepromo {
+        line-height: 120%;
+        letter-spacing: 0.02em;
+    }
+
+    .header .profilepromostack{
+        position: absolute;
+        top: 31rem;
+        align-self: center;
+        transform: translateX(-45%);
+    } 
+
+    .header .header-btn{
+       position: absolute;
+       top: 38rem;
+       transform: translateX(-45%);
+
+    } 
+
+    nav .bottom-navbar {
+        top: 10px !important;
+        background: #FAFAFA;
+    }
+ } 
+
+ @media (min-width: 360px) and (max-width: 539px){
+    .header-top{
+        display: none;
+    } 
+    
+    nav .addpost-btn{
+        width: 145px;
+        height: 35px;
+        padding: 8px 24px;
+        position: absolute;
+        top: -7rem;
+        transform: translateX(-10%);
+     }
+
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 600px;
+    }
+
+    .header .companyname-box{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 72px;
+    }
+
+    .header .companyname{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      position: absolute;
+      top: 10px;
+      width: 109px;
+      height: 22px;
+      text-align: center;
+      letter-spacing: 0.01em;
+      }
+ 
+      .header .background-banner {
+          display: none;
+      }
+
+      .header .banner{
+          width: 100%;
+          object-fit: fill;
+          border-radius: 4px;
+          top: 72px;
+          transform: translateX(10%);
+      }
+    
+      .header .companyprofilelogo {
+        border: 8px solid #FFFFFF;
+        position: absolute;
+        top: 22rem;
+        z-index: 10;
+        left: calc(40%);
+      }
+
+      .header .companytagline-box{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+      }
+
+      .header .companytagline{
+        font-family: 'SF Pro Display';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: start;
+        letter-spacing: 0.02em;
+        color: #190F0F;
+        top: 28rem;
+        position: absolute;
+      }
+
+       .header .profilepromo {
+        line-height: 120%;
+        letter-spacing: 0.02em;
+    }
+
+    .header .profilepromostack{
+        position: absolute;
+        top: 31rem;
+        width: 200px;
+        align-self: center;
+        transform: translateX(-45%);
+    } 
+
+    .header .header-btn{
+       position: absolute;
+       top: 38rem;
+       transform: translateX(-110%);
+    } 
+
+    nav .bottom-navbar {
+        top: 10px !important;
+    }
+ } 
+
+ 
+
+ @media (min-width: 992px) {
+
+    .modal-lg,
+    .modal-xl {
+        max-width: 936px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .header .banner{
+        width: 21rem;
+        height: 14rem;
+    }
+    .header .background-banner{
+        width: 20rem;
+        height: 16rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1212px){
+    .header .banner{
+        width: 22rem;
+        height: 17rem;
+    }
+    .header .background-banner{
+        width: 22rem;
+        height: 18rem;
+    }
+}
+
+.editcol input[type='checkbox']:checked{
+    background-color: #E24F84;
+    border: 2px solid #E24F84;
+    box-shadow: 0 0 15px 1px rgba(255, 175, 175, 0.1);
+}

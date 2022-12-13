@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Roobert-Medium;
+    src: url(./assets/font/Roobert-Medium.ttf);
+}
+
+@font-face {
+    font-family: SF Pro Display;
+    src: url(./assets/font/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(./assets/font/DMSans.ttf);
+}
+@font-face {
+  font-family: Inter;
+  src: url(./assets/font/Inter-Regular.ttf);
+}
+
+
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code {
+    font-family: Roobert-Medium;
+  }

@@ -1,0 +1,167 @@
+
+
+
+.auth-verification-modal .modal-content {
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+}
+
+.auth-verification-modal .modal-body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-verification-modal .signup-modal-left {
+    display: none;
+}
+
+.auth-verification-modal .signup-modal-right {
+   width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.auth-verification-modal .login-modal-right {
+   width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-verification-modal .signup-logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+/* ...........................................info Modal................................................ */
+
+.auth-personalinfo-modal {
+    height: 80.5vh;
+}
+
+.auth-personalinfo-modal .modal-content {
+    height: 80.5vh;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.auth-personalinfo-modal .modal-body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-personalinfo-modal .personalinfo-modal-left {
+    display: none;
+}
+
+.auth-personalinfo-modal .personalinfo-modal-right {
+   width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.auth-personalinfo-modal .login-modal-right {
+   width: 800px;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.auth-personalinfo-modal .personalinfo-logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+@media (min-width: 360px) and (max-width: 450px){
+    .auth-verification-modal {
+        max-width: 80vw;
+        left: 8%;
+    }
+    .auth-personalinfo-modal {
+        max-width: 80vw;
+        left: 8%;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 575px){
+    .auth-verification-modal{
+        display: none;
+        max-width: 80vw;
+        left: 8%;
+    }
+    .auth-personalinfo-modal{
+        max-width: 80vw;
+        left: 8%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 660px){
+    .auth-verification-modal{
+        display: none;
+    }
+    .auth-personalinfo-modal{
+        max-width: 80vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .auth-personalinfo-modal{
+        display: none;
+    }
+    .auth-verification-modal{
+        display: none;
+    }
+    .auth-verification-modal .modal-backdrop {
+        display: none;
+    }
+    .auth-verification-modal .modal-content {
+        display: none;
+    }
+    .auth-verification-modal .signup-modal-left{
+        display: none;
+    }
+    .auth-personalinfo-modal .personalinfo-modal-left{
+        display: none;
+    }
+    
+
+  }
+
+  @media screen and (min-width: 768px) and (max-width:990px ){
+    .auth-verification-modal .signup-modal-left{
+        display: none;
+    }
+    .auth-personalinfo-modal .personalinfo-modal-left{
+        display: none;
+    }
+
+  }
+
+  @media screen and (min-width: 991px) and (max-width: 1190px )
+  {
+    .auth-verification-modal .signup-modal-left{
+        display: none;
+    }
+    .auth-personalinfo-modal .personalinfo-modal-left{
+        display: none;
+    }
+  }
+

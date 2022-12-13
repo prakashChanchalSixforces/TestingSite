@@ -1,0 +1,91 @@
+
+  .map-autocomplete{
+    position: absolute;
+    top: 4rem;
+    height: 42px;
+    z-index: 10;
+    padding: 14px 44px;
+    font-size: 1rem;
+    border-radius: 20px;
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    box-sizing: border-box;
+    justify-content: center;
+    box-shadow: 0px 0px 22px rgba(120, 115, 115, 0.16);   
+  }
+
+  @media (min-width: 1381px) {
+    .map-autocomplete{
+         width : 37rem;
+         margin-left: 5rem;
+         margin-right: 5rem;
+    }  
+    }
+
+
+ @media (min-width: 1242px) and (max-width: 1380px) {
+    .map-autocomplete{
+        width : 32rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        }  
+        }
+     
+  @media (min-width: 1092px) and (max-width: 1241px) {
+   .map-autocomplete{
+        width : 22rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+   }  
+   }
+
+  @media (min-width: 821px) and (max-width: 1091px) {
+  .map-autocomplete{
+    max-width : 22rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    }
+  }
+
+  @media (min-width: 719px) and (max-width: 820px) {
+    .map-autocomplete{
+      width : 32rem;
+      margin-right: 7rem;
+      margin-left: 7rem;
+      }
+    }
+   
+    @media (min-width: 617px) and (max-width: 718px) {
+      .map-autocomplete{
+        width : 27rem;
+        margin-right: 7rem;
+        margin-left: 7rem;
+        }
+      }
+
+      @media (min-width: 516px) and (max-width: 616px) {
+        .map-autocomplete{
+          width : 22rem;
+          margin-right: 7rem;
+          margin-left: 6rem;
+          }
+        }  
+
+        @media (min-width: 416px) and (max-width: 515px) {
+          .map-autocomplete{
+            width : 17rem;
+            margin-right: 5rem;
+            margin-left: 5em;
+            }
+          }    
+
+          @media (min-width: 314px) and (max-width: 415px) {
+            .map-autocomplete{
+              width : 15rem;
+              margin-right: 5rem;
+              margin-left: 4em;
+              }
+            }   
+
+
+
