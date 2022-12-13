@@ -1,9 +1,8 @@
-import "bootstrap/dist/css/bootstrap.css"
+
 import './App.css';
 import React, {useState,Suspense, lazy} from 'react'
 import Reactga from 'react-ga'
 import { useEffect } from "react";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Routes,Route} from 'react-router-dom'
 const MovingHomepage=lazy(()=>import('./components/pages/Services/ServiceHomePage/MovingHomepage'))
 
