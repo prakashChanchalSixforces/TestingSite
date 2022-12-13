@@ -1,5 +1,5 @@
 
-import './App.css';
+
 import React, {useState,Suspense, lazy} from 'react'
 import Reactga from 'react-ga'
 import { useEffect } from "react";
