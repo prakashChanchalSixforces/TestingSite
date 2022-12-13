@@ -1,6 +1,5 @@
 
 
-import Reactga from 'react-ga';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Routes,Route} from 'react-router-dom';
 import MovingHomepage from './components/pages/Services/ServiceHomePage/MovingHomepage';
