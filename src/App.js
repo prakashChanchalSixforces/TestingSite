@@ -5,36 +5,8 @@ import Reactga from 'react-ga'
 import { useEffect } from "react";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Routes,Route} from 'react-router-dom'
-import ProtectedRoute from "./components/layouts/Auth/ProtectedRoute";
-import UserProtectedroute from "./components/layouts/Auth/UserProtectedroute";
-import CustomerAccount from "./components/pages/CustomerAccount/CustomerAccount";
-import MainTrack from "./components/pages/TrackLocation/MainTrack";
-import SwiftbelHome from "./components/pages/SwiftbelHome/SwiftbelHome";
-const SavedJobs = lazy(() => import("./components/pages/Savedjobs/Savedjobs"));
-const ServicePage = lazy(() => import("./components/pages/Services/ServicePage"));
-const HomePage = lazy(() => import("./components/pages/CustomerHome/HomePage"));
-const RightSearch= lazy(() => import("./components/pages/UserHomepage/RightSearch"));
-const PaymentDetails= lazy(() => import("./components/pages/Payment/PaymentDetails"));
-const TemplateProfile= lazy(() => import("./components/pages/CreateNewProfile/Template"));
-const NewSignup= lazy(() => import("./components/pages/CreateNewProfile/NewSignup"));
-const CreateNewPassword= lazy(() => import("./components/pages/CreateNewProfile/CreatePassword"));
-const Booking= lazy(() => import("./components/pages/Bookings/bookings"));
-const Profile= lazy(() => import("./components/pages/SpprofileCustomer/Profile"));
-const SetServices= lazy(() => import("./components/pages/CreateNewProfile/SetServices"));
-const MobileSearch = lazy(() => import('./components/pages/UserHomepage/MobileSearch'));
-const ResetPassword = lazy(() => import('./components/pages/Auth/ResetPassword'));
-const Dashboard = lazy(() => import('./components/pages/Dashboard/Dashboard'));
-const Business = lazy(() => import('./components/pages/Home'));
-const ServicePage1 = lazy(() => import('./components/pages/UserHomepage/ServicePage'));
-const Settings = lazy(() => import('./components/pages/settings'));
-const PaymentPage = lazy(() => import('./components/pages/Payment/PaymentPage'));
-const AdminLogin = lazy(()=>import('./components/pages/adminSignup/index'))
-const AdminSignup = lazy(()=>import('./components/pages/adminSignup/AdminSignup'))
-const Messages=lazy(()=>import('./components/pages/chat/index'))
-const Builder=lazy(()=>import('./components/pages/Builder'))
 const MovingHomepage=lazy(()=>import('./components/pages/Services/ServiceHomePage/MovingHomepage'))
-//const MovingService=lazy(()=>import('./components/pages/Services/ServiceHomePage/MovingService'))
-const MovingService=lazy(()=>import('./components/pages/Services/ServiceHomePage/MovingService'))
+
 function App() {
   const [heightProfile] = useState('100vh');
   useEffect(()=>{

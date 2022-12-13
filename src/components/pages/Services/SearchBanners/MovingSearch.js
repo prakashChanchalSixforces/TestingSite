@@ -8,7 +8,6 @@ import uparrow from '../../../../assets/open.png';
 import downarrow from '../../../../assets/close.png';
 import '../../UserHomepage/components/styles.css'
 import Calendar from 'react-calendar';
-import { TimeList } from '../../CompanyProfile/component/TimeList';
 import moment from 'moment';
 import '../../UserHomepage/Calendar.css'
 import Fadingcircles from '../../../../assets/faded.gif';

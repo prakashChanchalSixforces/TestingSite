@@ -6,17 +6,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import HeaderTop from '../../../layouts/headerTop'
 import { makeStyles } from '@material-ui/core/styles';
 import { isAuthenticated } from '../../../layouts/Auth/Authentication'
-import HomeServicesBar from '../../UserHomepage/components/HomeServiceBar'
 import MovingSearch from '../ServiceHomePage/MovingSearch'
-import ElectriciansSearch from '../SearchBanners/ElectriciansSearch'
-import PressureSearch from '../SearchBanners/PressureSearch'
-import PlumbersSearch from '../SearchBanners/PlumbersSearch'
-import ReviewPage from './ReviewPage'
-import MovingPlace from './MovingPlace'
 import BookingAndManaging from './BookingAndManaging'
-import MainFooter from '../../MainFooter/MainFooter'
-import CrousalPage from './Carousels'
-import SwiftbelExperince from './SwiftbelExperince'
 import WorkWithSwiftbel from './WorkingWithSwiftbel'
 import ResidentialService from './ResidentialService'
 import CommercialService from './CommercialService'
@@ -109,15 +100,7 @@ function MovingServicePage() {
         if (searchs === '') {
             return <MovingSearch loader={loader} setLoader={setLoader} />
         }
-        else if (searchs === 'pressurewashing') {
-            return <PressureSearch loader={loader} setLoader={setLoader} />
-        }
-        else if (searchs === 'electricians') {
-            return <ElectriciansSearch loader={loader} setLoader={setLoader} />
-        }
-        else if (searchs === 'plumbers') {
-            return <PlumbersSearch loader={loader} setLoader={setLoader} />
-        }
+     
     }
     return (
         <React.Fragment>

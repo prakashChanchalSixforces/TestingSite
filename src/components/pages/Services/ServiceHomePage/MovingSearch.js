@@ -6,13 +6,9 @@ import Autocomplete from 'react-google-autocomplete';
 import { useLocation, useNavigate } from 'react-router-dom';
 import banner from '../../../../assets/TestingImg/RESIDENTIAL_MOVING-1.svg';
 import '../../UserHomepage/components/styles.css'
-import Calendar from 'react-calendar';
-import { TimeList } from '../../CompanyProfile/component/TimeList';
 import moment from 'moment';
 import TextLoop from "react-text-loop";
 import '../../UserHomepage/Calendar.css'
-import Fadingcircles from '../../../../assets/faded.gif';
-import { moving } from '../../../../store/Actions/User.action';
 const wordArray = [
 "Call our team.","Set your budget.","Kick your feet up." ,"settle in sooner."
 ]

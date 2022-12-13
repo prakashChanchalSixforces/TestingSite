@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import swiftbellogo from '../../assets/swiftbellogoprofile.png'
 import Profile from '../../assets/profile.png'
 import Brandname from '../../assets/Brandname.svg'
-import '../pages/CompanyProfile/companyprofile.css'
+import '../layouts/CompanyProfile/companyprofile.css'
 import { useState ,useEffect} from 'react';
 import { isAuthenticated } from './Auth/Authentication';
 import { useNavigate } from 'react-router-dom';
@@ -44,7 +44,7 @@ const HeaderTop = (props) => {
             <Text className='home-swiftbel-brand'>SwiftBelMoving</Text>
           </Stack>
         <div className='d-flex juatify-content-between mt-2'>
-         <h4 style={{cursor:'pointer'}} onClick={()=>props?.setActive('home')} className='p-2'><Link activeClass="active" to="home" spy={true} smooth={true}>Home</Link>home</h4>
+         <h4 style={{cursor:'pointer'}} onClick={()=>props?.setActive('home')} className='p-2'><Link activeClass="active" to="home" spy={true} smooth={true}></Link>home</h4>
          <h4 style={{cursor:'pointer'}}  onClick={()=>props?.setActive('service')} className='p-2'><Link activeClass="active" to="service" spy={true} smooth={true}>service</Link></h4>
          <h4 style={{cursor:'pointer'}}  onClick={()=>props?.setActive('Pricing')} className='p-2'><Link activeClass="active" to="Pricing" spy={true} smooth={true}>Pricing</Link></h4>
          <h4 style={{cursor:'pointer'}} className='p-2'><Link activeClass="active" to="about" spy={true} smooth={true}>About us</Link></h4>
