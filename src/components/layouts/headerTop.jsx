@@ -40,7 +40,7 @@ const HeaderTop = (props) => {
         <HomeHeader fluid style={{ padding: '0',zIndex:1000 }}>
         <div className='home-nav' style={{background:`${header}`,backgroundColor:`${header}`,alignItems:'center',display:'flex' }}>
           <Stack direction='horizontal' gap={2} style={{cursor:'pointer'}}onClick={()=>navigate('/')} >
-            <img alt='' className='home-icon' src={swiftbellogo} />
+          
             <Text className='home-swiftbel-brand'>SwiftBelMoving</Text>
           </Stack>
         <div className='d-flex juatify-content-between mt-2'>
