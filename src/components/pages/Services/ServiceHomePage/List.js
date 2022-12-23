@@ -76,7 +76,8 @@ function List(props) {
 
                         <div className='left-side'>
                             <div >
-                                <h1 style={{ textAlign: 'center' }}>We listen and work together to make your move go smoothly.</h1>
+                                <h1 style={{ marginLeft:'30px' }}>We listen and work together to make your move go smoothly.</h1>
+                                <br/>
                                 <div className='d-flex'>
                                     <br />
                                     <p className='text2 pe-2'> <span style={{ fontSize: '32px' }}>40+ <br /></span>
@@ -143,12 +144,13 @@ padding-bottom:30px;
 padding-left:80px;
 padding-right:35px;
 @media (min-width: 260px) and (max-width: 820px){
-    flex-wrap:wrap;
+    display:flex;
+    flex-direction:column;
     justify-content:center;
-padding-left:25px;
-padding-right:25px;
+padding-left:45px;
+padding-right:45px;
 .text1{
-    font-size: 24px;
+    font-size: 20px;
 }
 }
 .error{
@@ -168,6 +170,10 @@ color: #190F0F;
 }
 .left-side{
     margin-top:60px;
+    @media (min-width: 260px) and (max-width: 1099px){
+   
+      
+    }
 }
 .text2{
     font-family:Roobert-medium;

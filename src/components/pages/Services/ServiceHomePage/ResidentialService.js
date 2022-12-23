@@ -76,7 +76,9 @@ function ResidentialService(props) {
                 <div className='left-side'>
                     <div >
                             <h2 >Residential Moving</h2> 
+                            <br/>
                         <p className='text2'>Care Full Moves specializes in residential moves. Each of our moving-experts are rigorously trained on dealing with your valuable and irreplaceable items. Our number one goal for every move is a seamless, affordable, and stress-free transition to your new home.</p>
+                        <br/>
                     </div>
                     <Actions
     
@@ -108,6 +110,10 @@ export default ResidentialService
 const Main = styled.div`
 display:flex;
 justify-content:center;
+@media (min-width: 260px) and (max-width: 820px){
+   padding-left:25px;
+   padding-right:25px;
+ }
 `
 const Head=styled.div`
 width:1312px;
@@ -171,6 +177,10 @@ color: #190F0F;
 }
 .left-side{
     margin-top:20px;
+    @media (min-width: 260px) and (max-width: 1099px){
+        padding-left:25px;
+        padding-right:25px;
+    }
 }
 .text2{
     font-family:Roobert-medium;

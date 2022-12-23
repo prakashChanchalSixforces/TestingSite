@@ -76,8 +76,10 @@ function Servic(props) {
 
                         <div className='left-side'>
                             <div >
+                            <br/>
                                 <h1 style={{ textAlign: 'center' }}>Getting Ready to Move?
 You've Landed in the Right Place!</h1>
+<br/>
                                
                             </div>
                         </div>

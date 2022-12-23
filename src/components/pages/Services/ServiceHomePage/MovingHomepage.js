@@ -18,6 +18,7 @@ import About from './About'
 import List from './List'
 import Servic from './Servic'
 import FAQ from './FAQ'
+import FooterTop from './FooterTop'
 
 const useStyles = makeStyles(() => ({
     ul: {
@@ -148,6 +149,11 @@ function MovingServicePage() {
                 <Servic />
                 <br />
                 <FAQ id='FAQ' />
+                <br/>
+                <FooterMain className='d-flex justify-content-center'>
+            <FooterTop/>
+            </FooterMain>
+
             </Main>
         </React.Fragment>
     )
@@ -161,5 +167,12 @@ overflow-x: hidden;
 @media (min-width: 821px) and (max-width: 1310px){
 padding-left:30px;
 padding-right:30px;
+}
+`
+const FooterMain=styled.div`
+background:white;
+background-color:white;
+@media (min-width: 200px) and (max-width: 768px){
+padding-left:30px;
 }
 `

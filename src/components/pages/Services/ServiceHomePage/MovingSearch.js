@@ -85,7 +85,7 @@ function MovingSearch(props) {
                                <TextLoop>
                                     {
                                         wordArray.map((item) =>
-                                            <span > {item}</span>
+                                            <span style={{color:'#787373'}} > {item}</span>
                                         )
                                     }
                                 </TextLoop>
@@ -170,6 +170,7 @@ padding-left:25px;
 padding-right:25px;
 .text1{
     font-size: 24px;
+    color:#FAFAFA;
 }
 }
 .error{

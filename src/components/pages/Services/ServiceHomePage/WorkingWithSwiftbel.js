@@ -186,7 +186,7 @@ padding-right:20px;
 filter: drop-shadow(0px -1px 38px rgba(0, 0, 0, 0.12));
 border-radius:12px;
 @media (min-width: 260px) and (max-width: 820px){
-    display: grid;
+    display: inline;
     justify-content:center;
     grid-auto-rows: auto;
     grid-template-columns: repeat(2, 1fr);

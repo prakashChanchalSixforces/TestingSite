@@ -79,7 +79,9 @@ function Packaging(props) {
                 <div className='left-side'>
                     <div >
                             <h1 >Packing Services</h1> 
+                            <br/>
                         <p className='text2'>Our expert-movers are highly trained in packing your valuable items safely and efficiently to save you space, time, and money. We come prepared with all the necessary supplies to make sure your items are kept safe every time!</p>
+                        <br/>
                     </div>
                     <Actions
     
@@ -172,6 +174,10 @@ color: #190F0F;
 }
 .left-side{
     margin-top:20px;
+    @media (min-width: 260px) and (max-width: 1099px){
+        padding-left:15px;
+        padding-right:15px;
+    }
 }
 .text2{
     font-family:Roobert-medium;

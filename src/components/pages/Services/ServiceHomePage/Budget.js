@@ -77,7 +77,9 @@ function Budget(props) {
                 <div className='left-side'>
                     <div >
                             <h2 style={{textAlign:'center'}}>Moving Tailored to Your Budget!</h2> 
+                            <br/>
                         <p className='text2'>We offer moving services for every step of the way in the transition to your new home. Whether you just need to purchase packing supplies, or you need your whole home or office packed and moved, we've got you covered. Call today for a free consultation and estimate!</p>
+                        <br/>
                     </div>
                    
                 </div>
@@ -163,6 +165,10 @@ color: #190F0F;
 }
 .left-side{
     margin-top:60px;
+    @media (min-width: 260px) and (max-width: 1099px){
+        padding-left:15px;
+        padding-right:15px;
+    }
 }
 .text2{
     font-family:Roobert-medium;
@@ -172,6 +178,8 @@ color: #190F0F;
     text-align:center;
     @media (min-width: 260px) and (max-width: 820px){
         font-size: 14px;
+       width:85%;
+       margin-left:25px;
     }
     @media (min-width: 821px) and (max-width: 1099px){
         font-size:16px;

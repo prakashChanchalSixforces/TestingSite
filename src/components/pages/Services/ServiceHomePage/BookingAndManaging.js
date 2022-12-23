@@ -21,7 +21,9 @@ function BookingAndManaging(props) {
           <div style={{width:'55px',height:'55px',borderRadius:'55px',backgroundColor:'blue',display:'flex',justifyContent:'center',color:'#fff',alignItems:'center'}}>
               1
             </div>
+          
             </div>
+            <br/>
      
             <StepHeader className='mb-2' >{"Select Required Services"} </StepHeader>
             <StepSubText>
@@ -36,7 +38,9 @@ function BookingAndManaging(props) {
           <div style={{width:'55px',height:'55px',borderRadius:'55px',backgroundColor:'blue',display:'flex',justifyContent:'center',color:'#fff',alignItems:'center'}}>
               2
             </div>
+           
             </div>
+            <br/>
            
             <StepHeader className='mb-2' >Call the Care Full team </StepHeader>
             <StepSubText>
@@ -51,7 +55,9 @@ function BookingAndManaging(props) {
           <div style={{width:'55px',height:'55px',borderRadius:'55px',backgroundColor:'blue',display:'flex',justifyContent:'center',color:'#fff',alignItems:'center'}}>
               3
             </div>
+            
             </div>
+            <br/>
 
             <StepHeader className='mb-2' >Book Your Move </StepHeader>
             <StepSubText>
@@ -66,7 +72,10 @@ function BookingAndManaging(props) {
           <div style={{width:'55px',height:'55px',borderRadius:'55px',backgroundColor:'blue',display:'flex',justifyContent:'center',color:'#fff',alignItems:'center'}}>
               4
             </div>
+            
+            
             </div>
+            <br/>
 
             <StepHeader className='mb-2' >Sit Back and Relax </StepHeader>
             <StepSubText>

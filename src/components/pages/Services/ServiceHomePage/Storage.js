@@ -77,8 +77,10 @@ function StorageService(props) {
                 <div className='left-side'>
                     <div >
                             <h2 >Storage Solutions</h2> 
+                            <br/>
                         <p className='text2'>We know how stressful moving can be! That's why we offer services to take care of every step of the journey to your new home. We have storage locations across Canada, with multiple locations in each major city we can fully accommodate your belongings. Call today and ask about our unbeatable storage rates!
 Need packing? We do that too!</p>
+<br/>
                     </div>
                     <Actions
     
@@ -173,6 +175,10 @@ color: #190F0F;
 }
 .left-side{
     margin-top:20px;
+    @media (min-width: 260px) and (max-width: 1099px){
+        padding-left:15px;
+        padding-right:15px;
+    }
 }
 .text2{
     font-family:Roobert-medium;

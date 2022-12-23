@@ -78,6 +78,7 @@ function About(props) {
                 </div>
                 <div className='left-side'>
                     <div >
+                    <br/>
                             <h2 >We're the movers who stand apart from the competition.</h2> 
                        
                     </div>
@@ -166,6 +167,10 @@ color: #190F0F;
 }
 .left-side{
     margin-top:20px;
+    @media (min-width: 260px) and (max-width: 1099px){
+        padding-left:15px;
+        padding-right:15px;
+    }
 }
 .text2{
     font-family:Roobert-medium;

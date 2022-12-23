@@ -3,7 +3,7 @@ import { Stack,Container, Dropdown, Offcanvas, Button} from 'react-bootstrap';
 import styled from 'styled-components';
 import swiftbellogo from '../../assets/swiftbellogoprofile.png'
 import Profile from '../../assets/profile.png'
-import Brandname from '../../assets/Brandname.svg'
+import Brandname from '../../assets/TestingImg/cover.png'
 import '../layouts/CompanyProfile/companyprofile.css'
 import { useState ,useEffect} from 'react';
 import { isAuthenticated } from './Auth/Authentication';
@@ -41,14 +41,14 @@ const HeaderTop = (props) => {
         <div className='home-nav' style={{background:`${header}`,backgroundColor:`${header}`,alignItems:'center',display:'flex' }}>
           <Stack direction='horizontal' gap={2} style={{cursor:'pointer'}}onClick={()=>navigate('/')} >
           
-            <Text className='home-swiftbel-brand'>SwiftBelMoving</Text>
+          <h2 className='home-swiftbel-brand'><img src={Brandname} style={{width:'150px',height:'55px'}} alt='Brandname'/></h2>
           </Stack>
         <div className='d-flex juatify-content-between mt-2'>
-         <h4 style={{cursor:'pointer'}} onClick={()=>props?.setActive('home')} className='p-2'><Link activeClass="active" to="home" spy={true} smooth={true}></Link>home</h4>
-         <h4 style={{cursor:'pointer'}}  onClick={()=>props?.setActive('service')} className='p-2'><Link activeClass="active" to="service" spy={true} smooth={true}>service</Link></h4>
-         <h4 style={{cursor:'pointer'}}  onClick={()=>props?.setActive('Pricing')} className='p-2'><Link activeClass="active" to="Pricing" spy={true} smooth={true}>Pricing</Link></h4>
-         <h4 style={{cursor:'pointer'}} className='p-2'><Link activeClass="active" to="about" spy={true} smooth={true}>About us</Link></h4>
-         <h4 style={{cursor:'pointer'}} className='p-2'><Link activeClass="active" to="FAQ" spy={true} smooth={true}>FAQ</Link></h4>
+         <h4 style={{cursor:'pointer',marginRight:'5px'}} onClick={()=>props?.setActive('home')} className='p-2'><Link activeClass="active" to="home" spy={true} smooth={true}></Link>Home</h4>
+         <h4 style={{cursor:'pointer',marginRight:'5px'}}  onClick={()=>props?.setActive('service')} className='p-2'><Link activeClass="active" to="service" spy={true} smooth={true}>Service</Link></h4>
+         <h4 style={{cursor:'pointer',marginRight:'5px'}}  onClick={()=>props?.setActive('Pricing')} className='p-2'><Link activeClass="active" to="Pricing" spy={true} smooth={true}>Pricing</Link></h4>
+         <h4 style={{cursor:'pointer',marginRight:'5px'}} className='p-2'><Link activeClass="active" to="about" spy={true} smooth={true}>About us</Link></h4>
+         <h4 style={{cursor:'pointer',marginRight:'5px'}} className='p-2'><Link activeClass="active" to="FAQ" spy={true} smooth={true}>FAQ</Link></h4>
    
          </div>
          {/* </div>
@@ -87,6 +87,11 @@ padding-right:10px;
 }
 .home-swiftbel-brand{
   color:linear-gradient(90deg, #D81159, #EB873F,#FFCF23);
+}
+h4{
+  :hover {
+    font-size: 2em;
+}
 }
 `
 const MobHeader = styled(Container)`

@@ -79,7 +79,9 @@ function CommercialService(props) {
                 <div className='left-side'>
                     <div >
                             <h2 >Commercial Moving</h2> 
+                            <br/>
                         <p className='text2'>Care Full Moving offers commercial moving services in Vancouver, Calgary, and Toronto. Our number one goal on each commercial move is to earn repeated business through excellence in service and workmanship. Our highly trained moving experts are ready to relocate your business to the next stage at an affordable price. Call us today for a free quote!</p>
+                        <br/>
                     </div>
                     <Actions
     
