@@ -161,6 +161,7 @@ function MovingServicePage() {
 
 export default MovingServicePage
 const Main = styled.div`
+
 @media (min-width: 260px) and (max-width: 820px){
 overflow-x: hidden;
 }

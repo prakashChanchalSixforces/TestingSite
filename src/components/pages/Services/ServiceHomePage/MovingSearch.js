@@ -79,7 +79,8 @@ function MovingSearch(props) {
                 <BannerMobImg src={banner} />
                 <div className='left-side'>
                     <div >
-                            <h2 >Start Moving.</h2> 
+                            <h1 >Start Moving.</h1> 
+                            <br/>
                                
                                <p className='text1'>
                                <TextLoop>
@@ -90,8 +91,9 @@ function MovingSearch(props) {
                                     }
                                 </TextLoop>
                                </p>
+                               <br/>
                                <h5>Worried about your upcoming move?</h5>
-                        <p className='text2'>Call us today to find out how the Care Full team can make the transition to your new home easy, affordable, and seamless.</p>
+                        <p className='text2'>Call us today to find out how the Swift movers team can make the transition to your new home easy, affordable, and seamless.</p>
 
                     </div>
                     <Actions onMouseEnter={()=>setShow('+1 604 358 4116')} onMouseLeave={()=>setShow("Call the Care for team")}
@@ -128,8 +130,8 @@ background:white;
 `
 const Head=styled.div`
 width:1312px;
-padding-left:20px;
-padding-right:20px;
+padding-left:50px;
+padding-right:50px;
 background:white;
 }
 `
@@ -169,7 +171,7 @@ padding-bottom:30px;
 padding-left:25px;
 padding-right:25px;
 .text1{
-    font-size: 24px;
+    font-size: 20px;
     color:#FAFAFA;
 }
 }
@@ -179,7 +181,7 @@ padding-right:25px;
 .text1{
 font-family:Roobert-medium;
 font-weight: 500;
-font-size: 40px;
+font-size: 35px;
 color: #190F0F;
     @media (min-width: 260px) and (max-width: 1099px){
         font-size: 21px;
@@ -242,8 +244,9 @@ const Actions = styled(Button)`
 width:300px;
 height: 48px;
 border-radius: 8px;
-background-color:#fff;
-border:1px solid #000;
+background-color:#45B6FE;
+border:1px solid #fff;
+color:#fff;
 font-size: 16px;
 font-family:Roobert-medium;
 @media (min-width: 260px) and (max-width: 820px){
@@ -349,8 +352,8 @@ input[type=range] {
     }
 `
 const BannerImg = styled.img`
-height:421px;
-width:700px;
+
+width:800px;
 @media (min-width: 822px) and (max-width: 1399px){
     height:381px;
     }

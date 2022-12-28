@@ -37,18 +37,18 @@ const HeaderTop = (props) => {
       let username=localStorage.getItem('userName')
     return (
       <Main>
-        <HomeHeader fluid style={{ padding: '0',zIndex:1000 }}>
+        <HomeHeader fluid style={{ padding: '20px',zIndex:1000 }}>
         <div className='home-nav' style={{background:`${header}`,backgroundColor:`${header}`,alignItems:'center',display:'flex' }}>
           <Stack direction='horizontal' gap={2} style={{cursor:'pointer'}}onClick={()=>navigate('/')} >
           
-          <h2 className='home-swiftbel-brand'><img src={Brandname} style={{width:'150px',height:'55px'}} alt='Brandname'/></h2>
+          <h2 className='home-swiftbel-brand'><img src={Brandname} style={{paddingTop:'40px'}}  alt='Brandname'/></h2>
           </Stack>
         <div className='d-flex juatify-content-between mt-2'>
-         <h4 style={{cursor:'pointer',marginRight:'5px'}} onClick={()=>props?.setActive('home')} className='p-2'><Link activeClass="active" to="home" spy={true} smooth={true}></Link>Home</h4>
-         <h4 style={{cursor:'pointer',marginRight:'5px'}}  onClick={()=>props?.setActive('service')} className='p-2'><Link activeClass="active" to="service" spy={true} smooth={true}>Service</Link></h4>
-         <h4 style={{cursor:'pointer',marginRight:'5px'}}  onClick={()=>props?.setActive('Pricing')} className='p-2'><Link activeClass="active" to="Pricing" spy={true} smooth={true}>Pricing</Link></h4>
-         <h4 style={{cursor:'pointer',marginRight:'5px'}} className='p-2'><Link activeClass="active" to="about" spy={true} smooth={true}>About us</Link></h4>
-         <h4 style={{cursor:'pointer',marginRight:'5px'}} className='p-2'><Link activeClass="active" to="FAQ" spy={true} smooth={true}>FAQ</Link></h4>
+         <h4 style={{cursor:'pointer',marginRight:'15px'}} onClick={()=>props?.setActive('home')} className='p-2'><Link activeClass="active" to="home" spy={true} smooth={true}></Link>Home</h4>
+         <h4 style={{cursor:'pointer',marginRight:'15px'}}  onClick={()=>props?.setActive('service')} className='p-2'><Link activeClass="active" to="service" spy={true} smooth={true}>Service</Link></h4>
+         <h4 style={{cursor:'pointer',marginRight:'15px'}}  onClick={()=>props?.setActive('Pricing')} className='p-2'><Link activeClass="active" to="Pricing" spy={true} smooth={true}>Pricing</Link></h4>
+         <h4 style={{cursor:'pointer',marginRight:'15px'}} className='p-2'><Link activeClass="active" to="about" spy={true} smooth={true}>About us</Link></h4>
+         <h4 style={{cursor:'pointer',marginRight:'15px'}} className='p-2'><Link activeClass="active" to="FAQ" spy={true} smooth={true}>FAQ</Link></h4>
    
          </div>
          {/* </div>
@@ -60,7 +60,7 @@ const HeaderTop = (props) => {
           <h4 style={{padding:'10px'}}><Link  to="FAQ" spy={true} smooth={true}>FAQ</Link></h4>
 
          </div> */}
-   <Button onMouseEnter={()=>setShow('+1 604 358 4116')} onMouseLeave={()=>setShow('Call us')}>{show}</Button>
+   <Button style={{backgroundColor:'#45B6FE',border:'1px solid #fff'}}  onMouseEnter={()=>setShow('+1 604 358 4116')} onMouseLeave={()=>setShow('Call us')}>{show}</Button>
           </div>
           </HomeHeader>
         </Main>
@@ -78,6 +78,8 @@ color:linear-gradient(128.86deg, #D81159 11.42%, #EB873F 72%, #FFCF23 107.53%);
 const Main = styled.div`
 background-color:white;
 background:white;
+height:140px;
+padding-top:15px;
 border-bottom:1px solid #F3F3F3;
 @media (min-width: 200px) and (max-width: 820px)
 {
@@ -89,8 +91,9 @@ padding-right:10px;
   color:linear-gradient(90deg, #D81159, #EB873F,#FFCF23);
 }
 h4{
+  font-size:18px;
   :hover {
-    font-size: 2em;
+    color:#45B6FE;
 }
 }
 `

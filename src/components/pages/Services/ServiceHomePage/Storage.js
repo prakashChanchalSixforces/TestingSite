@@ -174,7 +174,8 @@ color: #190F0F;
         }
 }
 .left-side{
-    margin-top:20px;
+    padding-top:50px;
+
     @media (min-width: 260px) and (max-width: 1099px){
         padding-left:15px;
         padding-right:15px;

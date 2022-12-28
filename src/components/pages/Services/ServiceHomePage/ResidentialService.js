@@ -77,7 +77,7 @@ function ResidentialService(props) {
                     <div >
                             <h2 >Residential Moving</h2> 
                             <br/>
-                        <p className='text2'>Care Full Moves specializes in residential moves. Each of our moving-experts are rigorously trained on dealing with your valuable and irreplaceable items. Our number one goal for every move is a seamless, affordable, and stress-free transition to your new home.</p>
+                        <p className='text2'>Swift movers Moves specializes in residential moves. Each of our moving-experts are rigorously trained on dealing with your valuable and irreplaceable items. Our number one goal for every move is a seamless, affordable, and stress-free transition to your new home.</p>
                         <br/>
                     </div>
                     <Actions

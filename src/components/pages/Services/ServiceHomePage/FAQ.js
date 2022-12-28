@@ -85,6 +85,11 @@ const collapseAll = () => {
  
     return (
         <React.Fragment>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
             <Main id='FAQ'>
                 <Head>
                 <div >
@@ -128,7 +133,9 @@ const collapseAll = () => {
             </Card1Moving>
             </Head>
             </Main>
-
+            <br/>
+                    <br/>
+                    <br/>
         </React.Fragment>
     )
 

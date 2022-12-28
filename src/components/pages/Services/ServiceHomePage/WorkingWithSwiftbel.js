@@ -31,16 +31,22 @@ function WorkWithSwiftbel(props) {
     return (
         <React.Fragment >
             <>
-
+<br/>
+<br/>
+<br/>
             <div >
           <Title>Flexible and Predictable Pricing</Title>
+          <br/>
           <SubHeader>{'Simple, flexible, and predictable pricing. Choose which package is suited for you.'}</SubHeader>
         </div>
          <Main  id='Pricing'>           
             <Head>
-            <Segment  className={' p-3'}>
+            <Segment  >
+                <div style={{backgroundColor:'#45B6FE',padding:"20px",color:'#fff',width:'100%'}}>
                         <h2 style={{textAlign:'center'}}>{"Studio / Small stuff"}</h2>
+                        </div>
                    <p  className='title'>{"$95"}</p>
+                 
                    <br/>
                    <div >
                    <br/>
@@ -58,7 +64,7 @@ function WorkWithSwiftbel(props) {
                 <br/>
                 <div className='d-flex justify-content-center'>
                 <Actions 
-    
+    style={{color:'#45B6FE',border:'1px solid #45B6FE'}}
     variant='light' >
 
     Get started
@@ -66,8 +72,10 @@ function WorkWithSwiftbel(props) {
 </div>
                 </div>
                  </Segment>
-                 <Segments  className={' p-3'}>
+                 <Segments  >
+                     <div style={{backgroundColor:'#45B6FE',padding:"20px",color:'#fff'}}>
                         <h2 style={{textAlign:'center'}}>1 to 2 Bedroom Home <br/> (Most Purchased)</h2>
+                        </div>
                    <p  className='title'>{"$129"}</p>
                    <br/>
                    <div >
@@ -86,7 +94,7 @@ function WorkWithSwiftbel(props) {
                 <br/>
                 <div className='d-flex justify-content-center'>
                 <Actions 
-    
+    style={{backgroundColor:'#45B6FE',border:'1px solid #45B6FE',color:'#fff'}}
     variant='light' >
 
     Get started
@@ -94,8 +102,10 @@ function WorkWithSwiftbel(props) {
 </div>
                 </div>
                  </Segments>
-                 <Segment  className={' p-3'}>
+                 <Segment  >
+                       <div style={{backgroundColor:'#45B6FE',padding:"20px",color:'#fff',width:'100%'}}>
                         <h2 style={{textAlign:'center'}}>{"3+ Bedroom Home"}</h2>
+                        </div>
                    <p  className='title'>{"$169"}</p>
                    <br/>
                    <div >
@@ -114,7 +124,7 @@ function WorkWithSwiftbel(props) {
                 <br/>
                 <div className='d-flex justify-content-center'>
                 <Actions 
-    
+     style={{color:'#45B6FE',border:'1px solid #45B6FE'}}
     variant='light' >
 
     Get started
@@ -176,13 +186,12 @@ font-family:Roobert-medium;
  }
 `
 const Head=styled.div`
-width:1070px;
+width:920px;
 background:white;
 display:flex;
 justify-content:space-between;
 border-radius:8px;
-padding-left:20px;
-padding-right:20px;
+
 filter: drop-shadow(0px -1px 38px rgba(0, 0, 0, 0.12));
 border-radius:12px;
 @media (min-width: 260px) and (max-width: 820px){
@@ -227,7 +236,7 @@ const Segments = styled.div`
 background:white;
 background-color:white;
 filter: drop-shadow(0px -1px 38px rgba(0, 0, 0, 0.12));
-padding-top:60px;
+padding-bottom:30px;
 .title{
     margin-top:10px;
     margin-bottom:-25px;

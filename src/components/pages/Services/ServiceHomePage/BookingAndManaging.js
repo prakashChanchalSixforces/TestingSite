@@ -18,7 +18,7 @@ function BookingAndManaging(props) {
         <Stepstyle >
         <div style={{width:'300px',marginRight:'25px'}}>
             <div style={{display:'flex',justifyContent:'center'}}>
-          <div style={{width:'55px',height:'55px',borderRadius:'55px',backgroundColor:'blue',display:'flex',justifyContent:'center',color:'#fff',alignItems:'center'}}>
+          <div style={{width:'55px',height:'55px',borderRadius:'55px',backgroundColor:'#45B6FE',display:'flex',justifyContent:'center',color:'#fff',alignItems:'center'}}>
               1
             </div>
           
@@ -35,14 +35,14 @@ function BookingAndManaging(props) {
           </div>
           <div style={{width:'300px',marginRight:'25px'}}>
             <div style={{display:'flex',justifyContent:'center'}}>
-          <div style={{width:'55px',height:'55px',borderRadius:'55px',backgroundColor:'blue',display:'flex',justifyContent:'center',color:'#fff',alignItems:'center'}}>
+          <div style={{width:'55px',height:'55px',borderRadius:'55px',backgroundColor:'#45B6FE',display:'flex',justifyContent:'center',color:'#fff',alignItems:'center'}}>
               2
             </div>
            
             </div>
             <br/>
            
-            <StepHeader className='mb-2' >Call the Care Full team </StepHeader>
+            <StepHeader className='mb-2' >Call the Swift Movers team </StepHeader>
             <StepSubText>
             {props?.type==="moving"?
             "Movers will arrive with the right equipment to load your stuff and secure it safely. We'll see you at the destination!":
@@ -52,7 +52,7 @@ function BookingAndManaging(props) {
           </div>
           <div style={{width:'300px',marginRight:'25px'}}>
             <div style={{display:'flex',justifyContent:'center'}}>
-          <div style={{width:'55px',height:'55px',borderRadius:'55px',backgroundColor:'blue',display:'flex',justifyContent:'center',color:'#fff',alignItems:'center'}}>
+          <div style={{width:'55px',height:'55px',borderRadius:'55px',backgroundColor:'#45B6FE',display:'flex',justifyContent:'center',color:'#fff',alignItems:'center'}}>
               3
             </div>
             
@@ -60,6 +60,7 @@ function BookingAndManaging(props) {
             <br/>
 
             <StepHeader className='mb-2' >Book Your Move </StepHeader>
+            <br/>
             <StepSubText>
             {props?.type==="moving"?
             `We unload your items and place them right where you want them. Pay with your card, then review your experience. We'll see you next time!`
@@ -69,7 +70,7 @@ function BookingAndManaging(props) {
           </div>
           <div style={{width:'300px',marginRight:'25px'}}>
             <div style={{display:'flex',justifyContent:'center'}}>
-          <div style={{width:'55px',height:'55px',borderRadius:'55px',backgroundColor:'blue',display:'flex',justifyContent:'center',color:'#fff',alignItems:'center'}}>
+          <div style={{width:'55px',height:'55px',borderRadius:'55px',backgroundColor:'#45B6FE',display:'flex',justifyContent:'center',color:'#fff',alignItems:'center'}}>
               4
             </div>
             
@@ -78,6 +79,7 @@ function BookingAndManaging(props) {
             <br/>
 
             <StepHeader className='mb-2' >Sit Back and Relax </StepHeader>
+            <br/>
             <StepSubText>
             {props?.type==="moving"?
             `We unload your items and place them right where you want them. Pay with your card, then review your experience. We'll see you next time!`

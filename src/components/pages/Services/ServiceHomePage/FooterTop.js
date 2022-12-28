@@ -25,7 +25,7 @@ const FooterTop = (props) => {
                 <Row>
                     <Col sm={6} lg={3} xl={2}>
                         <Stack direction='horizontal' gap={1}>
-            <h2 className='home-swiftbel-brand'><img src={Brandname} style={{width:'150px',height:'55px'}} alt='Brandname'/></h2>
+            <h2 className='home-swiftbel-brand'><img src={Brandname}  alt='Brandname'/></h2>
                         </Stack>
                     </Col>
                 </Row>
