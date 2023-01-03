@@ -20,7 +20,7 @@ const FooterBottom = () => {
           <p>$ CAD</p>&nbsp;&nbsp;&nbsp;
           </div>
           <div className='innerdiv'>
-          <p className='rights'>{new Date().getFullYear()} SwiftMover, Inc. - All rights reserved</p>
+          <p className='rights'>{new Date().getFullYear()} SwiftMovers, Inc. - All rights reserved</p>
           </div>
             </span>
           </Head>
