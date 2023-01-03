@@ -36,7 +36,7 @@ const FooterTop = (props) => {
                     <div  >
                         <h6 className='mt-4 heading'>Vancouver</h6>
                         <ul className='list-unstyled'>
-                            <li className='mt-3 subheading' >Tornato</li>
+                            <li className='mt-3 subheading' >Toronto</li>
                             <li className='mt-3 subheading' >Richmond</li>
                    
                         </ul>
