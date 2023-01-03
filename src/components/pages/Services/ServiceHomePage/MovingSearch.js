@@ -10,7 +10,7 @@ import moment from 'moment';
 import TextLoop from "react-text-loop";
 import '../../UserHomepage/Calendar.css'
 const wordArray = [
-"Call our team.","Set your budget.","Kick your feet up." ,"settle in sooner."
+"Call our team.","Set your budget.","Kick your feet up." ,"Settle in sooner."
 ]
 function MovingSearch(props) {
     const dispatch = useDispatch();
@@ -80,13 +80,12 @@ function MovingSearch(props) {
                 <div className='left-side'>
                     <div >
                             <h1 >Start Moving.</h1> 
-                            <br/>
                                
                                <p className='text1'>
                                <TextLoop>
                                     {
                                         wordArray.map((item) =>
-                                            <span style={{color:'#787373'}} > {item}</span>
+                                            <span style={{color:'#45B6FE'}} > {item}</span>
                                         )
                                     }
                                 </TextLoop>
@@ -96,17 +95,17 @@ function MovingSearch(props) {
                         <p className='text2'>Call us today to find out how the Swift movers team can make the transition to your new home easy, affordable, and seamless.</p>
 
                     </div>
-                    <Actions onMouseEnter={()=>setShow('+1 604 358 4116')} onMouseLeave={()=>setShow("Call the Care for team")}
+                    <Actions 
     
                             variant='light' >
         
-                            {show}
+                            {"(604) 358-4116"}
                         </Actions>
                         <MobileView>
                             <MobileActions
                                 variant='light' >
                                 {
-                                    "Call the Care for team"}
+                                    "(604) 358-4116"}
                             </MobileActions>
                         </MobileView>
                 </div>

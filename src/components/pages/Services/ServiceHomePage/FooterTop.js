@@ -19,42 +19,43 @@ const FooterTop = (props) => {
     },[profileDetails?._id])
     return (
         <React.Fragment>
+            <div >
         <FooterContainer style={props?.containerStyle}>
             <br/>
             <Container fluid >
-                <Row>
-                    <Col sm={6} lg={3} xl={2}>
-                        <Stack direction='horizontal' gap={1}>
-            <h2 className='home-swiftbel-brand'><img src={Brandname}  alt='Brandname'/></h2>
-                        </Stack>
-                    </Col>
-                </Row>
-                <Hr/>
+            
                 <Row xs={2} md={5} lg={5} className='d-flex justify-content-between'>
                     <div>
-                        <h6 className='mt-4 heading'>Home</h6>
+                        <h6 className='mt-4 heading'>Phone:</h6>
+                        <ul className='list-unstyled'>
+                            <li className='mt-3 subheading' >(604) 358-4116</li>
+                   
+                        </ul>
                     
                     </div>
                     <div  >
-                        <h6 className='mt-4 heading'>Service</h6>
+                        <h6 className='mt-4 heading'>Vancouver</h6>
+                        <ul className='list-unstyled'>
+                            <li className='mt-3 subheading' >Tornato</li>
+                            <li className='mt-3 subheading' >Richmond</li>
+                   
+                        </ul>
                      
                     </div>
                     <div >
-                        <h6 className='mt-4 heading'>Price</h6>
+                        <h6 className='mt-4 heading'>Hours:</h6>
+                        <ul className='list-unstyled'>
+                            <li className='mt-3 subheading' >Everyday</li>
+                            <li className='mt-3 subheading' >9am - 9pm</li>
+                   
+                        </ul>
                      
-                    </div>
-                    <div>
-                        <h6 className='mt-4 heading'>About us</h6>
-                       
-                    </div>
-                    <div>
-                        <h6 className='mt-4 heading'>FAQ</h6>
-                      
                     </div>
                 </Row>
                 <br/>
             </Container>
         </FooterContainer>
+        </div>
         </React.Fragment>
 
     )
@@ -65,8 +66,8 @@ export default FooterTop;
 const FooterContainer = styled.div`
 max-width: 100vw;
 height: auto;
-background-color:white;
-background:white;
+background-color:#45B6FE;
+background:#45B6FE;
 padding-top:1rem;
 color:black;
 width:1312px;
@@ -79,10 +80,12 @@ width:1312px;
 .heading{
     font-family:Roobert-medium;
     font-size:18px;
+    color:#fff;
 }
 .subheading{
  font-family : Inter;
  font-size:16px;
+ color:#fff;
 }
 .home-icon{
     height:26px;

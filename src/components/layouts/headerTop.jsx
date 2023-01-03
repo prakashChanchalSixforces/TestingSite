@@ -41,7 +41,7 @@ const HeaderTop = (props) => {
         <div className='home-nav' style={{background:`${header}`,backgroundColor:`${header}`,alignItems:'center',display:'flex' }}>
           <Stack direction='horizontal' gap={2} style={{cursor:'pointer'}}onClick={()=>navigate('/')} >
           
-          <h2 className='home-swiftbel-brand'><img src={Brandname} style={{paddingTop:'40px'}}  alt='Brandname'/></h2>
+          <h2 className='home-swiftbel-brand'><img src={Brandname} style={{paddingTop:'40px',height:'100px'}}  alt='Brandname'/></h2>
           </Stack>
         <div className='d-flex juatify-content-between mt-2'>
          <h4 style={{cursor:'pointer',marginRight:'15px'}} onClick={()=>props?.setActive('home')} className='p-2'><Link activeClass="active" to="home" spy={true} smooth={true}></Link>Home</h4>
@@ -60,7 +60,7 @@ const HeaderTop = (props) => {
           <h4 style={{padding:'10px'}}><Link  to="FAQ" spy={true} smooth={true}>FAQ</Link></h4>
 
          </div> */}
-   <Button style={{backgroundColor:'#45B6FE',border:'1px solid #fff'}}  onMouseEnter={()=>setShow('+1 604 358 4116')} onMouseLeave={()=>setShow('Call us')}>{show}</Button>
+   <Button style={{backgroundColor:'#45B6FE',border:'1px solid #fff'}}  onMouseEnter={()=>setShow('+1 604 358 4116')} onMouseLeave={()=>setShow('Call us')}>{"(604) 358-4116"}</Button>
           </div>
           </HomeHeader>
         </Main>

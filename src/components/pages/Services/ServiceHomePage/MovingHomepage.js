@@ -19,6 +19,7 @@ import List from './List'
 import Servic from './Servic'
 import FAQ from './FAQ'
 import FooterTop from './FooterTop'
+import FooterBottom from '../FooterBottom'
 
 const useStyles = makeStyles(() => ({
     ul: {
@@ -139,21 +140,20 @@ function MovingServicePage() {
                 <br />
 
                 <Budget />
+               
                 <br />
-                <About id='about' />
-                <br />
-                <List />
+                <List id='about' />
                 <br />
                 <BookingAndManaging />
-                <br />
-                <Servic />
+                
                 <br />
                 <FAQ id='FAQ' />
                 <br/>
-                <FooterMain className='d-flex justify-content-center'>
+                <FooterMain style={{backgroundColor:"#45B6FE"}} className='d-flex justify-content-center'>
             <FooterTop/>
+           
             </FooterMain>
-
+            <FooterBottom/>
             </Main>
         </React.Fragment>
     )
